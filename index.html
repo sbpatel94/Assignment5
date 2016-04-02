@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment5.css"/>
+    <script src="javascript/Assignment5.js"></script>
+</head>
+
+<body>
+<h1>Assignment 5</h1>
+<hr>
+   <select onchange="MenuChoice()" id="menu">
+    <option>Please select an option.</option>
+    <option>Show Area 1</option>
+    <option>Show Area 2</option>
+    <option>Show Area 3</option>
+    </select>
+<section id="section1" class="section1">
+<h3>All Customers List</h3>
+<button onclick="getAllCustomers()" id="list">Get All Customers.</button>
+<hr>
+<label id="allcustomer">Display list of all Customer here:</label>
+</section>
+
+<section id="section2" class="section2">
+<h3>Customer Order History</h3>
+<label>Please enter Customer ID:</label>
+<input type="text" id=custid">
+<br>
+<button onclick="getCustomerOrderHistory()" id="history">Get Customer Order History.</button>
+<hr>
+<label id="orderhistory">Display Order History here:</label><br>
+
+</section>
+
+<section id="section3" class="section3">
+<h3>Customer Order List</h3>
+<label>Please enter Customer ID:</label>
+<input type="text" id="custid">
+<br>
+<button onclick="getOrdersForCustomer()" id="orders">Get Customer Orders.</button>
+<hr>
+<label id="orderdisplay">Display Customer Orders here:</label><br>
+
+</section>
+
+
+</body>
+</html>
