@@ -38,7 +38,7 @@ function GenerateOutput(result)
 function getCustomerOrderHistory()
 {
     var objRequest2 = new XMLHttpRequest();
-    var url = "http://bus-pluto.ad.uab.edu/jsonwebservice/service1.svc/getCustomerOrderHistory/customerID";
+    var url = "http://bus-pluto.ad.uab.edu/jsonwebservice/service1.svc/getCustomerOrderHistory/customerID/";
     url += document.getElementById("custid").value;
     
     
